@@ -174,7 +174,7 @@ async def stream(client, m: Message):
                 await group_call.join(CHAT_ID)
                 await group_call.start_video(video, with_audio=True, repeat=False)
                 VIDEO_CALL[CHAT_ID] = group_call
-                await msg.edit(f"▶️ **Started [Video Streaming](https://t.me/AsmSafone) !**", disable_web_page_preview=True)
+                await msg.edit(f"▶️ **Started [Video Streaming](https://t.me/sp_all) !**", disable_web_page_preview=True)
             except Exception as e:
                 await msg.edit(f"❌ **An Error Occoured !** \n\nError: `{e}`")
         else:
@@ -182,7 +182,7 @@ async def stream(client, m: Message):
                 await group_call.join(CHAT_ID)
                 await group_call.start_video(video, with_audio=True, repeat=False)
                 VIDEO_CALL[CHAT_ID] = group_call
-                await msg.edit(f"▶️ **Started [Video Streaming](https://t.me/AsmSafone) !**", disable_web_page_preview=True)
+                await msg.edit(f"▶️ **Started [Video Streaming](https://t.me/sp_all) !**", disable_web_page_preview=True)
             except Exception as e:
                 await msg.edit(f"❌ **An Error Occoured !** \n\nError: `{e}`")
 
@@ -236,11 +236,11 @@ allcmd = ["start", "help", f"start@{USERNAME}", f"help@{USERNAME}"] + admincmds
 async def not_chat(_, m: Message):
     buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/sp_all"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Sp_all"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("🤖 BOT 🤖", url="https://t.me/sp_all"),
             ]
          ]
-    await m.reply_text(text="**Sorry, You Can't Use This Bot In This Group 🤷‍♂️! But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/AsmSafone/VideoPlayerBot) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await m.reply_text(text="**Sorry, You Can't Use This Bot In This Group 🤷‍♂️ 😉!**", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
