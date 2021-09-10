@@ -46,7 +46,7 @@ HELP_TEXT = """
 \u2022 `/restart` - restart the bot (owner only)
 
 © **Powered By** : 
-**@AsmSafone | @SafoTheBot** 👑
+**@sp_all | @sp_all** 👑
 """
 
 
@@ -55,12 +55,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/sp_all"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Sp_all"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/sp_all")
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -82,12 +81,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/sp_all"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/sp_all"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173")
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -117,12 +115,11 @@ async def start(client, message):
                 InlineKeyboardButton("SEARCH INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/sp_all"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/sp_all"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/sp_all")
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -135,12 +132,11 @@ async def start(client, message):
 async def help(client, message):
     buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/sp_all"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/sp_all"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/sp_all")
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
